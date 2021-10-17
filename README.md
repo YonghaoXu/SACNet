@@ -2,7 +2,7 @@
 
 PyTorch implementation of our method for adversarial attacks and defenses in hyperspectral image classification.
 
-![image](Figure/SACNet.png)
+![](Figure/SACNet.png)
 
 ## Installation
 * Install `Pytorch 1.4.0` from https://github.com/pytorch/pytorch with `Python 3.7`.
@@ -24,7 +24,7 @@ git clone https://github.com/YonghaoXu/SACNet
 * Adversarial Examples Visualization:
   - `CUDA_VISIBLE_DEVICES=0 GenAdvExample.py`
 
-![image](Figure/AdvExample.png)
+![](Figure/AdvExample.png)
 
 ## Paper
 [Self-Attention Context Network: Addressing the Threat of Adversarial Attacks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9573256/)
