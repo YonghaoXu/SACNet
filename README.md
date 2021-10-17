@@ -20,9 +20,9 @@ git clone https://github.com/YonghaoXu/SACNet
 * Data Preparation:
   - `python GenSample.py`
 * Adversarial Attack with the FGSM:
-  - `CUDA_VISIBLE_DEVICES=0 Attack_FGSM.py`
+  - `CUDA_VISIBLE_DEVICES=0 python Attack_FGSM.py`
 * Adversarial Examples Visualization:
-  - `CUDA_VISIBLE_DEVICES=0 GenAdvExample.py`
+  - `CUDA_VISIBLE_DEVICES=0 python GenAdvExample.py`
 
 ![](Figure/AdvExample.png)
 
