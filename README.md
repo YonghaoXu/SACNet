@@ -29,7 +29,7 @@ git clone https://github.com/YonghaoXu/SACNet
 ## Paper
 [Self-Attention Context Network: Addressing the Threat of Adversarial Attacks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9573256/)
 
-Please cite our papers if you find it useful for your research.
+Please cite our paper if you find it useful for your research.
 
 ```
 @article{sacnet,
