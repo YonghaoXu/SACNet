@@ -80,15 +80,6 @@ def main(args):
     _, predict_labels = torch.max(output, 1)  
     predict_labels = np.squeeze(predict_labels.detach().cpu().numpy()).reshape(-1)
 
-    # results on the clean test set
-    OA,kappa,ProducerA = CalAccuracy(predict_labels[test_array],Y[test_array])
-
-    img = DrawResult(np.reshape(predict_labels+1,-1),args.dataID)
-    plt.imsave(save_path_prefix+args.model+'_clean_OA'+repr(int(OA*10000))+'_kappa'+repr(int(kappa*10000))+'.png',img)
-
-    print('OA=%.3f,Kappa=%.3f' %(OA*100,kappa*100))
-    print('producerA:',ProducerA)  
-
     # adversarial attack
     processed_image = Variable(images)
     processed_image = processed_image.requires_grad_()
