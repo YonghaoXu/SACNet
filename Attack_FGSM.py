@@ -76,9 +76,6 @@ def main(args):
             print('epoch %d/%d:  time: %.2f cls_loss = %.3f'%(epoch+1, num_epochs,batch_time,seg_loss.item()))
     
     Model.eval()
-    output = Model(images)  
-    _, predict_labels = torch.max(output, 1)  
-    predict_labels = np.squeeze(predict_labels.detach().cpu().numpy()).reshape(-1)
 
     # adversarial attack
     processed_image = Variable(images)
